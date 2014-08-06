@@ -14,14 +14,32 @@ class WordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        NSLog("%@", "got to word view controller")
-
-        // get word of day of last day
-        let predicate = NSPredicate(format: "createdAt = ''")
-        var query = PFQuery(className:"DailyWords", predicate: predicate)
-
         // Do any additional setup after loading the view, typically from a nib.
+
+
+        // get word of day of today
+        let today = NSDate()
+        let beginToday = today.dateByAddingTimeInterval(-86400)
+        var query = PFQuery(className:"DailyWords")
+        query.whereKey("createdAt", greaterThan:beginToday)
+        
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if !error { // success
+                if objects.count == 0 {
+                    NSLog("%@", "got here")
+                    self.words.text = "No Daily words yet! Come back in a little!"
+                } else {
+                    NSLog("%@", objects[0] as PFObject)
+                    var tmpObj = objects[0] as PFObject
+//                NSLog("%@", objects[0].objectForKey("text"))
+                    self.words.text = "got here success!!"
+                }
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
