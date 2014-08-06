@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ActivitySuggestorController.swift
 //  gift
 //
 //  Created by Tian, Vincent on 8/5/14.
@@ -8,11 +8,14 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ActivitySuggestorController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        NSLog("%@", "hello")
+        
     }
 
     override func didReceiveMemoryWarning() {
