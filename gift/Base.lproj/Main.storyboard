@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="496" y="389"/>
         </scene>
-        <!--Words!-->
+        <!--Words-->
         <scene sceneID="j95-Yc-Fe2">
             <objects>
-                <viewController id="t5S-nK-7uh" sceneMemberID="viewController">
+                <viewController id="t5S-nK-7uh" customClass="WordViewController" customModule="gift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RMP-eu-qIT"/>
                         <viewControllerLayoutGuide type="bottom" id="lO3-Gr-4kg"/>
@@ -192,7 +192,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Words!" image="letter.png" id="K2G-Os-81g"/>
+                    <tabBarItem key="tabBarItem" title="Words" image="letter.png" id="K2G-Os-81g"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">

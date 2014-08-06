@@ -15,18 +15,10 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     @IBOutlet var _tableView : UITableView!
     var _objects = NSMutableArray()
     
-//    @IBAction func addImage() {
-//        var picker = UIImagePickerController()
-//        picker.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum
-//        picker.delegate = self
-//        self.presentViewController(picker, animated: true, completion: nil)
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var query = PFQuery(className:"Pictures")
-        var objects = query.findObjects()
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if !error {
@@ -48,7 +40,6 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     override func viewDidAppear(animated: Bool) {
         if reload == true {
             var query = PFQuery(className:"Pictures")
-            var objects = query.findObjects()
             reload = false
             query.findObjectsInBackgroundWithBlock {
                 (objects: [AnyObject]!, error: NSError!) -> Void in
@@ -59,24 +50,6 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
             }
         }
     }
-
-    //
-//    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]!) {
-//        var gameScore = PFObject(className: "Pictures")
-//        var imageData = UIImagePNGRepresentation(info[UIImagePickerControllerOriginalImage] as UIImage)
-//        var file = PFFile(data: imageData)
-//        gameScore.setObject(file, forKey: "Picture")
-//        picker.dismissViewControllerAnimated(true, completion: nil)
-//        gameScore.saveInBackgroundWithBlock {
-//            (success: Bool!, error: NSError!) -> Void in
-//            if success {
-//                self.reload = true
-//                NSLog("Object created with id: \(gameScore.objectId)")
-//            } else {
-//                NSLog("%@", error)
-//            }
-//        }
-//    }
     
     override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
         return 1
@@ -89,7 +62,6 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         NSLog("%@", tableView)
-        
 //        if tableView == self.searchDisplayController.searchResultsTableView {
 //            let object =
 //            cell.textLabel.text = ""
@@ -97,8 +69,6 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
 //            let object =
 //            cell.textLabel.text = ""
 //        }
-        
-        
         return cell
     }
     

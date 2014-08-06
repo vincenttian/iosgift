@@ -28,7 +28,7 @@
 		87246B731991941F004697F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87246B721991941F004697F9 /* Foundation.framework */; };
 		87246B751991942B004697F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87246B741991942B004697F9 /* UIKit.framework */; };
 		87246B7A199197D4004697F9 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246B79199197D4004697F9 /* me.png */; };
-		87246B841992D3D1004697F9 /* PictureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246B831992D3D1004697F9 /* PictureController.swift */; };
+		87246B841992D3D1004697F9 /* AddPictureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246B831992D3D1004697F9 /* AddPictureController.swift */; };
 		87246B861992DA0F004697F9 /* cal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 87246B851992DA0F004697F9 /* cal.jpeg */; };
 		87246B921992DC04004697F9 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246B911992DC04004697F9 /* picture.png */; };
 		87246B961992DD81004697F9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246B951992DD81004697F9 /* camera.png */; };
@@ -36,6 +36,7 @@
 		87246B9E1992DE6F004697F9 /* photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246B9D1992DE6F004697F9 /* photos.png */; };
 		87246BA01992DEC1004697F9 /* walking.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246B9F1992DEC1004697F9 /* walking.png */; };
 		87246BA21992DF31004697F9 /* california.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246BA11992DF31004697F9 /* california.png */; };
+		87246BA41992E55A004697F9 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246BA31992E55A004697F9 /* WordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +76,7 @@
 		87246B741991942B004697F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87246B7619919690004697F9 /* gift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		87246B79199197D4004697F9 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
-		87246B831992D3D1004697F9 /* PictureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureController.swift; sourceTree = "<group>"; };
+		87246B831992D3D1004697F9 /* AddPictureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPictureController.swift; sourceTree = "<group>"; };
 		87246B851992DA0F004697F9 /* cal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cal.jpeg; sourceTree = "<group>"; };
 		87246B911992DC04004697F9 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
 		87246B951992DD81004697F9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		87246B9D1992DE6F004697F9 /* photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photos.png; sourceTree = "<group>"; };
 		87246B9F1992DEC1004697F9 /* walking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walking.png; sourceTree = "<group>"; };
 		87246BA11992DF31004697F9 /* california.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = california.png; sourceTree = "<group>"; };
+		87246BA31992E55A004697F9 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +143,10 @@
 				87246B7619919690004697F9 /* gift-Bridging-Header.h */,
 				87246B3619918C1A004697F9 /* AppDelegate.swift */,
 				87246B3819918C1A004697F9 /* PictureViewController.swift */,
+				87246BA31992E55A004697F9 /* WordViewController.swift */,
 				87246B3A19918C1A004697F9 /* ActivitySuggestorViewController.swift */,
 				87246B3C19918C1A004697F9 /* Main.storyboard */,
-				87246B831992D3D1004697F9 /* PictureController.swift */,
+				87246B831992D3D1004697F9 /* AddPictureController.swift */,
 				87246B5519918ECF004697F9 /* MainViewController.swift */,
 				87246B571991913E004697F9 /* Resources */,
 				87246B3F19918C1A004697F9 /* Images.xcassets */,
@@ -319,10 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87246BA41992E55A004697F9 /* WordViewController.swift in Sources */,
 				87246B3B19918C1A004697F9 /* ActivitySuggestorViewController.swift in Sources */,
 				87246B3719918C1A004697F9 /* AppDelegate.swift in Sources */,
 				87246B3919918C1A004697F9 /* PictureViewController.swift in Sources */,
-				87246B841992D3D1004697F9 /* PictureController.swift in Sources */,
+				87246B841992D3D1004697F9 /* AddPictureController.swift in Sources */,
 				87246B5619918ECF004697F9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
