@@ -29,6 +29,7 @@ class ActivitySuggestorController: UIViewController, CLLocationManagerDelegate {
 
         // code to work with yelp API
         var URL = "http://api.yelp.com/v2/search?term=restaurants&location=new%20york";
+//        var consumer = 
 
 
     }

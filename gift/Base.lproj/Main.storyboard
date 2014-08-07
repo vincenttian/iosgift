@@ -254,7 +254,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="a" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-Ld-ZE9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-Ld-ZE9">
                                 <rect key="frame" x="35" y="106" width="240" height="169"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -266,7 +266,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fEF-VB-DVn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEF-VB-DVn">
                                 <rect key="frame" x="35" y="325" width="240" height="128"/>
                             </imageView>
                         </subviews>
@@ -280,6 +280,7 @@
                         <size key="landscapeSize" width="568" height="320"/>
                     </simulatedScreenMetrics>
                     <connections>
+                        <outlet property="picture" destination="fEF-VB-DVn" id="78D-t6-yZ6"/>
                         <outlet property="words" destination="vVb-Ld-ZE9" id="a8i-MW-LxQ"/>
                     </connections>
                 </viewController>

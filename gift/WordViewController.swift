@@ -29,13 +29,11 @@ class WordViewController: UIViewController {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if !error { // success
                 if objects.count == 0 {
-                    NSLog("%@", "got here")
-                    self.words.text = "No Daily words yet! Come back in a little!"
+                    self.words.text = "No daily words yet! Come back in a little!"
                 } else {
-                    NSLog("%@", objects[0] as PFObject)
-                    var tmpObj = objects[0] as PFObject
-//                NSLog("%@", objects[0].objectForKey("text"))
-                    self.words.text = "got here success!!"
+                    var numObj = objects.count
+                    var tmpObj = objects[numObj-1] as PFObject
+                    self.words.text = tmpObj["text"] as String
                 }
             } else {
                 // Log details of the failure
@@ -48,13 +46,20 @@ class WordViewController: UIViewController {
         query2.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if !error {
-//                NSLog("Got all objects")
-//                NSLog("\n\n\n%@", objects[0] as PFObject)
-//                NSLog("%@", objects.count)
-//                self._pictures.addObject(objects[0])
-                //                    for object : PFObject! in objects {
-                //                        NSLog("Got:", object.objectForKey("id"))
-                //                    }
+                var numObj = objects.count
+                var randomNumber = Int(arc4random()) % numObj
+                var imageFile = objects[randomNumber]["picture"] as PFFile
+                imageFile.getDataInBackgroundWithBlock {
+                    (imageData: NSData!, error: NSError!) -> Void in
+                    if !error {
+                        var image = UIImage(data:imageData)
+                        self.picture.image = image
+                    }
+                }
+                                
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo)
             }
         }
     }
