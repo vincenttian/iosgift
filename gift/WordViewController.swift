@@ -11,6 +11,8 @@ import UIKit
 class WordViewController: UIViewController {
 
     @IBOutlet var words : UITextView!
+    @IBOutlet var picture : UIImageView!
+    var _pictures = NSMutableArray()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,21 @@ class WordViewController: UIViewController {
             } else {
                 // Log details of the failure
                 NSLog("Error: %@ %@", error, error.userInfo)
+            }
+        }
+
+        // get random picture with word of day
+        var query2 = PFQuery(className:"DailyPictures")
+        query2.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if !error {
+//                NSLog("Got all objects")
+//                NSLog("\n\n\n%@", objects[0] as PFObject)
+//                NSLog("%@", objects.count)
+//                self._pictures.addObject(objects[0])
+                //                    for object : PFObject! in objects {
+                //                        NSLog("Got:", object.objectForKey("id"))
+                //                    }
             }
         }
     }

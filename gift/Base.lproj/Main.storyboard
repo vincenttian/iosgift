@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-0h-tD0">
-                                <rect key="frame" x="120" y="192" width="81" height="30"/>
+                                <rect key="frame" x="120" y="45" width="81" height="30"/>
                                 <state key="normal" title="Add Picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,6 +25,72 @@
                                     <action selector="addImage" destination="Q9L-fE-Axl" eventType="touchUpInside" id="4NU-a1-Jfk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add pictures from phone library!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-IR-1ce">
+                                <rect key="frame" x="37" y="89" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kUV-V9-giZ">
+                                <rect key="frame" x="13" y="207" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fL9-wg-Y5X">
+                                <rect key="frame" x="87" y="207" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Ffa-QE-3j9">
+                                <rect key="frame" x="13" y="280" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="W6C-nx-IBU">
+                                <rect key="frame" x="87" y="280" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="2bV-tb-5YV">
+                                <rect key="frame" x="159" y="207" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="RY6-S6-dKT">
+                                <rect key="frame" x="233" y="207" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Fy0-ag-mXv">
+                                <rect key="frame" x="159" y="280" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="5Cd-Ed-DWq">
+                                <rect key="frame" x="233" y="280" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oNy-6U-onL">
+                                <rect key="frame" x="13" y="353" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="E62-Tm-k8q">
+                                <rect key="frame" x="87" y="353" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-tm-rUj">
+                                <rect key="frame" x="13" y="426" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="lQV-p1-Xe8">
+                                <rect key="frame" x="87" y="426" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="zaA-Bo-lxT">
+                                <rect key="frame" x="159" y="353" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="KDA-th-lM9">
+                                <rect key="frame" x="233" y="353" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fp1-02-btt">
+                                <rect key="frame" x="159" y="426" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-xn-Nax">
+                                <rect key="frame" x="233" y="426" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kdE-da-BGc">
+                                <rect key="frame" x="13" y="135" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="BrO-qG-UK9">
+                                <rect key="frame" x="87" y="135" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="P4V-hU-wab">
+                                <rect key="frame" x="159" y="135" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Bp0-l2-jFU">
+                                <rect key="frame" x="233" y="135" width="75" height="75"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -146,8 +212,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="One hour by plane," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB8-Xb-WWY">
+                                <rect key="frame" x="5" y="23" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Six hours by car," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbA-9h-aYa">
+                                <rect key="frame" x="28" y="42" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ZoL-Co-szH">
-                                <rect key="frame" x="74" y="136" width="172" height="360"/>
+                                <rect key="frame" x="25" y="99" width="271" height="413"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ8-oc-eF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="389"/>
+            <point key="canvasLocation" x="496" y="419"/>
         </scene>
         <!--Words-->
         <scene sceneID="j95-Yc-Fe2">
@@ -177,7 +255,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="a" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-Ld-ZE9">
-                                <rect key="frame" x="35" y="106" width="240" height="335"/>
+                                <rect key="frame" x="35" y="106" width="240" height="169"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -188,6 +266,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fEF-VB-DVn">
+                                <rect key="frame" x="35" y="325" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -252,7 +333,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gi-q2-5HS">
-                                <rect key="frame" x="83" y="417" width="154" height="30"/>
+                                <rect key="frame" x="83" y="512" width="154" height="30"/>
                                 <state key="normal" title="Click here to continue!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -263,6 +344,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="me.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzF-Vd-Wp9">
                                 <rect key="frame" x="35" y="130" width="240" height="229"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem epsilon etc etc etc asdfl;kasjfljasfca" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="274" translatesAutoresizingMaskIntoConstraints="NO" id="VXr-Cb-NmV">
+                                <rect key="frame" x="20" y="376" width="274" height="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
