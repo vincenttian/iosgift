@@ -18,18 +18,6 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var query = PFQuery(className:"Pictures")
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [AnyObject]!, error: NSError!) -> Void in
-            if !error {
-//                NSLog("Got all objects")
-                NSLog("\n\n\n%@", objects[0] as PFObject)
-                self._objects.addObject(objects[0])
-                //                    for object : PFObject! in objects {
-                //                        NSLog("Got:", object.objectForKey("id"))
-                //                    }
-            }
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,14 +26,25 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     }
     
     override func viewDidAppear(animated: Bool) {
-        if reload == true {
-            var query = PFQuery(className:"Pictures")
-            reload = false
-            query.findObjectsInBackgroundWithBlock {
-                (objects: [AnyObject]!, error: NSError!) -> Void in
-                if !error {
-//                    NSLog("Got all objects")
-                    NSLog("\n\n\n%@", objects[0] as PFObject)
+        var query = PFQuery(className:"Pictures")
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if !error {
+                self._objects = NSMutableArray()
+                var counter = objects.count - 1
+                for index in 0...counter {
+                    var currObj = objects[index] as PFObject
+                    var currImageFile = currObj["Picture"] as PFFile
+                    currImageFile.getDataInBackgroundWithBlock {
+                        (imageData: NSData!, error: NSError!) -> Void in
+                        if !error {
+                            var image = UIImage(data:imageData)
+                            self._objects.addObject(image)
+                        }
+                        if index == counter {
+                            self.tableView.reloadData()
+                        }
+                    }
                 }
             }
         }
@@ -61,14 +60,8 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        NSLog("%@", tableView)
-//        if tableView == self.searchDisplayController.searchResultsTableView {
-//            let object =
-//            cell.textLabel.text = ""
-//        } else {
-//            let object =
-//            cell.textLabel.text = ""
-//        }
+        var currImage = self._objects[indexPath.row] as UIImage
+        cell.imageView.image = currImage
         return cell
     }
     

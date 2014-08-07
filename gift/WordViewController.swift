@@ -42,13 +42,13 @@ class WordViewController: UIViewController {
         }
 
         // get random picture with word of day
-        var query2 = PFQuery(className:"DailyPictures")
+        var query2 = PFQuery(className:"Pictures")
         query2.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if !error {
                 var numObj = objects.count
                 var randomNumber = Int(arc4random()) % numObj
-                var imageFile = objects[randomNumber]["picture"] as PFFile
+                var imageFile = objects[randomNumber]["Picture"] as PFFile
                 imageFile.getDataInBackgroundWithBlock {
                     (imageData: NSData!, error: NSError!) -> Void in
                     if !error {
