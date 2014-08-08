@@ -13,6 +13,41 @@
 
 @interface ActivitySuggestorController ()
 
+    @property(strong, nonatomic) IBOutlet UILabel *name1;
+    @property(strong, nonatomic) IBOutlet UILabel *category1;
+    @property(strong, nonatomic) IBOutlet UILabel *rating1;
+    @property(strong, nonatomic) IBOutlet UILabel *reviews1;
+    @property(strong, nonatomic) IBOutlet UILabel *address1;
+    @property(strong, nonatomic) IBOutlet UILabel *url1;
+
+    @property(strong, nonatomic) IBOutlet UILabel *name2;
+    @property(strong, nonatomic) IBOutlet UILabel *category2;
+    @property(strong, nonatomic) IBOutlet UILabel *rating2;
+    @property(strong, nonatomic) IBOutlet UILabel *reviews2;
+    @property(strong, nonatomic) IBOutlet UILabel *address2;
+    @property(strong, nonatomic) IBOutlet UILabel *url2;
+
+    @property(strong, nonatomic) IBOutlet UILabel *name3;
+    @property(strong, nonatomic) IBOutlet UILabel *category3;
+    @property(strong, nonatomic) IBOutlet UILabel *rating3;
+    @property(strong, nonatomic) IBOutlet UILabel *reviews3;
+    @property(strong, nonatomic) IBOutlet UILabel *address3;
+    @property(strong, nonatomic) IBOutlet UILabel *url3;
+
+    @property(strong, nonatomic) IBOutlet UILabel *name4;
+    @property(strong, nonatomic) IBOutlet UILabel *category4;
+    @property(strong, nonatomic) IBOutlet UILabel *rating4;
+    @property(strong, nonatomic) IBOutlet UILabel *reviews4;
+    @property(strong, nonatomic) IBOutlet UILabel *address4;
+    @property(strong, nonatomic) IBOutlet UILabel *url4;
+
+    @property(strong, nonatomic) IBOutlet UILabel *name5;
+    @property(strong, nonatomic) IBOutlet UILabel *category5;
+    @property(strong, nonatomic) IBOutlet UILabel *rating5;
+    @property(strong, nonatomic) IBOutlet UILabel *reviews5;
+    @property(strong, nonatomic) IBOutlet UILabel *address5;
+    @property(strong, nonatomic) IBOutlet UILabel *url5;
+
 @end
 
 @implementation ActivitySuggestorController
@@ -44,44 +79,61 @@
 
          // recommend restaurants from yelp API
          YPAPISample *APISample = [[YPAPISample alloc] init];
+         
          [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"San Francisco" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
              if (results) {
-                 
                  // business1
-                 NSLog(@"name: %@",[[results objectAtIndex:0] objectForKey:@"name"]);
-                 NSLog(@"rating: %@",[[results objectAtIndex:0] objectForKey:@"rating"]);
-                 NSLog(@"address: %@",[[[[results objectAtIndex:0] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
-                 NSLog(@"reviews: %@",[[results objectAtIndex:0] objectForKey:@"review_count"]);
-                 NSLog(@"url: %@",[[results objectAtIndex:0] objectForKey:@"url"]);
-
+                 NSString *name1 = [[results objectAtIndex:0] objectForKey:@"name"];
+                 NSString *rating1 = [[results objectAtIndex:0] objectForKey:@"rating"];
+                 NSString *address1 = [[[[results objectAtIndex:0] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0];
+                 NSString *reviews1 = [[results objectAtIndex:0] objectForKey:@"review_count"];
+                 NSString *url1 = [[results objectAtIndex:0] objectForKey:@"url"];
+                 NSString *category1 = [[[[results objectAtIndex:0] objectForKey:@"categories"] objectAtIndex:0] objectAtIndex:0];
+                 NSDictionary *business1Dict = [[NSDictionary alloc] initWithObjects:@[name1, rating1, address1, reviews1, url1, category1] forKeys:@[@"name1", @"rating1", @"address1", @"reviews1", @"url1", @"category1"]];
+                 
                  // business2
-                 NSLog(@"name: %@",[[results objectAtIndex:1] objectForKey:@"name"]);
-                 NSLog(@"rating: %@",[[results objectAtIndex:1] objectForKey:@"rating"]);
-                 NSLog(@"address: %@",[[[[results objectAtIndex:1] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
-                 NSLog(@"reviews: %@",[[results objectAtIndex:1] objectForKey:@"review_count"]);
-                 NSLog(@"url: %@",[[results objectAtIndex:1] objectForKey:@"url"]);
-
+                 NSString *name2 = [[results objectAtIndex:1] objectForKey:@"name"];
+                 NSString *rating2 = [[results objectAtIndex:1] objectForKey:@"rating"];
+                 NSString *address2 = [[[[results objectAtIndex:1] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0];
+                 NSString *reviews2 = [[results objectAtIndex:1] objectForKey:@"review_count"];
+                 NSString *url2 = [[results objectAtIndex:1] objectForKey:@"url"];
+                 NSString *category2 = [[[[results objectAtIndex:1] objectForKey:@"categories"] objectAtIndex:0] objectAtIndex:0];
+                 NSDictionary *business2Dict = [[NSDictionary alloc] initWithObjects:@[name2, rating2, address2, reviews2, url2, category2] forKeys:@[@"name2", @"rating2", @"address2", @"reviews2", @"url2", @"category2"]];
+                 
                  // business3
-                 NSLog(@"name: %@",[[results objectAtIndex:2] objectForKey:@"name"]);
-                 NSLog(@"rating: %@",[[results objectAtIndex:2] objectForKey:@"rating"]);
-                 NSLog(@"address: %@",[[[[results objectAtIndex:2] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
-                 NSLog(@"reviews: %@",[[results objectAtIndex:2] objectForKey:@"review_count"]);
-                 NSLog(@"url: %@",[[results objectAtIndex:2] objectForKey:@"url"]);
-
+                 NSString *name3 = [[results objectAtIndex:2] objectForKey:@"name"];
+                 NSString *rating3 = [[results objectAtIndex:2] objectForKey:@"rating"];
+                 NSString *address3 = [[[[results objectAtIndex:2] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0];
+                 NSString *reviews3 = [[results objectAtIndex:2] objectForKey:@"review_count"];
+                 NSString *url3 = [[results objectAtIndex:2] objectForKey:@"url"];
+                 NSString *category3 = [[[[results objectAtIndex:2] objectForKey:@"categories"] objectAtIndex:0] objectAtIndex:0];
+                 NSDictionary *business3Dict = [[NSDictionary alloc] initWithObjects:@[name3, rating3, address3, reviews3, url3, category3] forKeys:@[@"name3", @"rating3", @"address3", @"reviews3", @"url3", @"category3"]];
+                 
+                 
                  // business4
-                 NSLog(@"name: %@",[[results objectAtIndex:3] objectForKey:@"name"]);
-                 NSLog(@"rating: %@",[[results objectAtIndex:3] objectForKey:@"rating"]);
-                 NSLog(@"address: %@",[[[[results objectAtIndex:3] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
-                 NSLog(@"reviews: %@",[[results objectAtIndex:3] objectForKey:@"review_count"]);
-                 NSLog(@"url: %@",[[results objectAtIndex:3] objectForKey:@"url"]);
-
+                 NSString *name4 = [[results objectAtIndex:3] objectForKey:@"name"];
+                 NSString *rating4 = [[results objectAtIndex:3] objectForKey:@"rating"];
+                 NSString *address4 = [[[[results objectAtIndex:3] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0];
+                 NSString *reviews4 = [[results objectAtIndex:3] objectForKey:@"review_count"];
+                 NSString *url4 = [[results objectAtIndex:3] objectForKey:@"url"];
+                 NSString *category4 = [[[[results objectAtIndex:3] objectForKey:@"categories"] objectAtIndex:0] objectAtIndex:0];
+                 NSDictionary *business4Dict = [[NSDictionary alloc] initWithObjects:@[name4, rating4, address4, reviews4, url4, category4] forKeys:@[@"name4", @"rating4", @"address4", @"reviews4", @"url4", @"category4"]];
+                 
+                 
                  // business5
-                 NSLog(@"name: %@",[[results objectAtIndex:4] objectForKey:@"name"]);
-                 NSLog(@"rating: %@",[[results objectAtIndex:4] objectForKey:@"rating"]);
-                 NSLog(@"address: %@",[[[[results objectAtIndex:4] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
-                 NSLog(@"reviews: %@",[[results objectAtIndex:4] objectForKey:@"review_count"]);
-                 NSLog(@"url: %@",[[results objectAtIndex:4] objectForKey:@"url"]);
-
+                 NSString *name5 = [[results objectAtIndex:4] objectForKey:@"name"];
+                 NSString *rating5 = [[results objectAtIndex:4] objectForKey:@"rating"];
+                 NSString *address5 = [[[[results objectAtIndex:4] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0];
+                 NSString *reviews5 = [[results objectAtIndex:4] objectForKey:@"review_count"];
+                 NSString *url5 = [[results objectAtIndex:4] objectForKey:@"url"];
+                 NSString *category5 = [[[[results objectAtIndex:4] objectForKey:@"categories"] objectAtIndex:0] objectAtIndex:0];
+                 NSDictionary *business5Dict = [[NSDictionary alloc] initWithObjects:@[name5, rating5, address5, reviews5, url5, category5] forKeys:@[@"name5", @"rating5", @"address5", @"reviews5", @"url5", @"category5"]];
+                 
+                 dispatch_async(dispatch_get_main_queue(), ^(void){
+                     //Run UI Updates
+                     [self setUIWithBusiness1:business1Dict withBusiness2:business2Dict withBusiness3:business3Dict withBusiness4:business4Dict andBusiness5:business5Dict];
+                 });
+                 
              } else {
                  NSLog(@"No business was found");
              }
@@ -106,6 +158,48 @@
     return coordinate;
 }
 
+- (void)setUIWithBusiness1:(NSDictionary *)biz1 withBusiness2:(NSDictionary *)biz2 withBusiness3:(NSDictionary *)biz3 withBusiness4:(NSDictionary *)biz4 andBusiness5:(NSDictionary *)biz5 {
+    // set business1 info
+    self.name1.text = [biz1 objectForKey: @"name1"];
+    self.category1.text = [biz1 objectForKey: @"category1"];
+    NSLog(@"%@", [biz1 objectForKey: @"rating1"]);
+//    self.rating1.text = [biz1 objectForKey: @"rating1"];
+//    self.reviews1.text = [biz1 objectForKey: @"reviews1"];
+    self.address1.text = [biz1 objectForKey: @"address1"];
+    self.url1.text = [biz1 objectForKey: @"url1"];
+
+    // set business2 info
+    self.name2.text = [biz2 objectForKey: @"name2"];
+    self.category2.text = [biz2 objectForKey: @"category2"];
+//    self.rating2.text = [biz2 objectForKey: @"rating2"];
+//    self.reviews2.text = [biz2 objectForKey: @"reviews2"];
+    self.address2.text = [biz2 objectForKey: @"address2"];
+    self.url2.text = [biz2 objectForKey: @"url2"];
+
+    // set business1 info
+    self.name3.text = [biz3 objectForKey: @"name3"];
+    self.category3.text = [biz3 objectForKey: @"category3"];
+//    self.rating3.text = [biz3 objectForKey: @"rating3"];
+//    self.reviews3.text = [biz3 objectForKey: @"reviews3"];
+    self.address3.text = [biz3 objectForKey: @"address3"];
+    self.url3.text = [biz3 objectForKey: @"url3"];
+
+    // set business4 info
+    self.name4.text = [biz4 objectForKey: @"name4"];
+    self.category4.text = [biz4 objectForKey: @"category4"];
+//    self.rating4.text = [biz4 objectForKey: @"rating4"];
+//    self.reviews4.text = [biz4 objectForKey: @"reviews4"];
+    self.address4.text = [biz4 objectForKey: @"address4"];
+    self.url4.text = [biz4 objectForKey: @"url4"];
+
+    // set business5 info
+    self.name5.text = [biz5 objectForKey: @"name5"];
+    self.category5.text = [biz5 objectForKey: @"category5"];
+//    self.rating5.text = [biz5 objectForKey: @"rating5"];
+//    self.reviews5.text = [biz5 objectForKey: @"reviews5"];
+    self.address5.text = [biz5 objectForKey: @"address5"];
+    self.url5.text = [biz5 objectForKey: @"url5"];
+}
 /*
 #pragma mark - Navigation
 

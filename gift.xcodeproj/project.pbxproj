@@ -36,6 +36,8 @@
 		87246BA01992DEC1004697F9 /* walking.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246B9F1992DEC1004697F9 /* walking.png */; };
 		87246BA21992DF31004697F9 /* california.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246BA11992DF31004697F9 /* california.png */; };
 		87246BA41992E55A004697F9 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246BA31992E55A004697F9 /* WordViewController.swift */; };
+		874C8C4819956412003B28A9 /* launch2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C4619956412003B28A9 /* launch2x.jpeg */; };
+		874C8C4919956412003B28A9 /* launchr4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C4719956412003B28A9 /* launchr4.jpeg */; };
 		87BDEA9419940714006412DC /* NSURLRequest+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BDEA9119940714006412DC /* NSURLRequest+OAuth.m */; };
 		87BDEA9519940714006412DC /* YPAPISample.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BDEA9319940714006412DC /* YPAPISample.m */; };
 		87BDEAB11994073B006412DC /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BDEA9A1994073B006412DC /* OACall.m */; };
@@ -127,6 +129,8 @@
 		87246B9F1992DEC1004697F9 /* walking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walking.png; sourceTree = "<group>"; };
 		87246BA11992DF31004697F9 /* california.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = california.png; sourceTree = "<group>"; };
 		87246BA31992E55A004697F9 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		874C8C4619956412003B28A9 /* launch2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch2x.jpeg; sourceTree = "<group>"; };
+		874C8C4719956412003B28A9 /* launchr4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchr4.jpeg; sourceTree = "<group>"; };
 		87BDEA9019940714006412DC /* NSURLRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+OAuth.h"; sourceTree = "<group>"; };
 		87BDEA9119940714006412DC /* NSURLRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+OAuth.m"; sourceTree = "<group>"; };
 		87BDEA9219940714006412DC /* YPAPISample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAPISample.h; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 		87246B571991913E004697F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				874C8C4619956412003B28A9 /* launch2x.jpeg */,
+				874C8C4719956412003B28A9 /* launchr4.jpeg */,
 				87246B851992DA0F004697F9 /* cal.jpeg */,
 				87F8D5C5199332D600375FF0 /* us.jpg */,
 				87F8D5EB1993377500375FF0 /* 2.jpg */,
@@ -506,8 +512,10 @@
 				87F8D5E81993376C00375FF0 /* 20.jpg in Resources */,
 				87F8D5DD1993376200375FF0 /* 16.jpg in Resources */,
 				87246B9E1992DE6F004697F9 /* photos.png in Resources */,
+				874C8C4919956412003B28A9 /* launchr4.jpeg in Resources */,
 				87F8D5C6199332D600375FF0 /* us.jpg in Resources */,
 				87F8D5C419932F1B00375FF0 /* map.png in Resources */,
+				874C8C4819956412003B28A9 /* launch2x.jpeg in Resources */,
 				87F8D5DE1993376200375FF0 /* 12.jpg in Resources */,
 				87246B7A199197D4004697F9 /* me.png in Resources */,
 				87246B921992DC04004697F9 /* picture.png in Resources */,

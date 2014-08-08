@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         Parse.setApplicationId("SSmJTIUPMJZOjlMVxGqOgi69qESLBQLJqKz7YoFQ", clientKey: "E0S1TfbAY01rKLSQmEbq2jsH4BMLyIovYytVcf6X")
+
+        // for launch image to last longer
+        sleep(1)
         
 
         return true
