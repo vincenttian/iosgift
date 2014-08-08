@@ -46,7 +46,42 @@
          YPAPISample *APISample = [[YPAPISample alloc] init];
          [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"San Francisco" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
              if (results) {
-                 NSLog(@"%@", results);
+                 
+                 // business1
+                 NSLog(@"name: %@",[[results objectAtIndex:0] objectForKey:@"name"]);
+                 NSLog(@"rating: %@",[[results objectAtIndex:0] objectForKey:@"rating"]);
+                 NSLog(@"address: %@",[[[[results objectAtIndex:0] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
+                 NSLog(@"reviews: %@",[[results objectAtIndex:0] objectForKey:@"review_count"]);
+                 NSLog(@"url: %@",[[results objectAtIndex:0] objectForKey:@"url"]);
+
+                 // business2
+                 NSLog(@"name: %@",[[results objectAtIndex:1] objectForKey:@"name"]);
+                 NSLog(@"rating: %@",[[results objectAtIndex:1] objectForKey:@"rating"]);
+                 NSLog(@"address: %@",[[[[results objectAtIndex:1] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
+                 NSLog(@"reviews: %@",[[results objectAtIndex:1] objectForKey:@"review_count"]);
+                 NSLog(@"url: %@",[[results objectAtIndex:1] objectForKey:@"url"]);
+
+                 // business3
+                 NSLog(@"name: %@",[[results objectAtIndex:2] objectForKey:@"name"]);
+                 NSLog(@"rating: %@",[[results objectAtIndex:2] objectForKey:@"rating"]);
+                 NSLog(@"address: %@",[[[[results objectAtIndex:2] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
+                 NSLog(@"reviews: %@",[[results objectAtIndex:2] objectForKey:@"review_count"]);
+                 NSLog(@"url: %@",[[results objectAtIndex:2] objectForKey:@"url"]);
+
+                 // business4
+                 NSLog(@"name: %@",[[results objectAtIndex:3] objectForKey:@"name"]);
+                 NSLog(@"rating: %@",[[results objectAtIndex:3] objectForKey:@"rating"]);
+                 NSLog(@"address: %@",[[[[results objectAtIndex:3] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
+                 NSLog(@"reviews: %@",[[results objectAtIndex:3] objectForKey:@"review_count"]);
+                 NSLog(@"url: %@",[[results objectAtIndex:3] objectForKey:@"url"]);
+
+                 // business5
+                 NSLog(@"name: %@",[[results objectAtIndex:4] objectForKey:@"name"]);
+                 NSLog(@"rating: %@",[[results objectAtIndex:4] objectForKey:@"rating"]);
+                 NSLog(@"address: %@",[[[[results objectAtIndex:4] objectForKey:@"location"] objectForKey:@"address"] objectAtIndex:0]);
+                 NSLog(@"reviews: %@",[[results objectAtIndex:4] objectForKey:@"review_count"]);
+                 NSLog(@"url: %@",[[results objectAtIndex:4] objectForKey:@"url"]);
+
              } else {
                  NSLog(@"No business was found");
              }

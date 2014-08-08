@@ -17,8 +17,10 @@ class WordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
 
-        // get word of day of today
+    override func viewDidAppear(animated: Bool) {
+    // get word of day of today
         let today = NSDate()
         let beginToday = today.dateByAddingTimeInterval(-86400)
         var query = PFQuery(className:"DailyWords")
@@ -39,9 +41,7 @@ class WordViewController: UIViewController {
                 NSLog("Error: %@ %@", error, error.userInfo)
             }
         }
-    }
 
-    override func viewDidAppear(animated: Bool) {
         // get random picture with word of day
         var query2 = PFQuery(className:"Pictures")
         query2.findObjectsInBackgroundWithBlock {
