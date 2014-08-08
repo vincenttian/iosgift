@@ -81,6 +81,7 @@
          YPAPISample *APISample = [[YPAPISample alloc] init];
          
          [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"San Francisco" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
+//         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:placemark.locality completionHandler:^(NSDictionary *notNeeded, NSError *results) {
              if (results) {
                  // business1
                  NSString *name1 = [[results objectAtIndex:0] objectForKey:@"name"];
@@ -162,42 +163,40 @@
     // set business1 info
     self.name1.text = [biz1 objectForKey: @"name1"];
     self.category1.text = [biz1 objectForKey: @"category1"];
-//    NSLog(@"%@", [biz1 objectForKey: @"rating1"]);
-//    NSLog(@"%@", [biz1 objectForKey: @"reviews1"]);
-//    self.rating1.text = [biz1 objectForKey: @"rating1"];
-//    self.reviews1.text = [biz1 objectForKey: @"reviews1"];
+    self.rating1.text = [[[biz1 objectForKey: @"rating1"] stringValue] stringByAppendingString:@" stars"];
+    self.reviews1.text = [[[biz1 objectForKey: @"reviews1"] stringValue] stringByAppendingString:@" reviews"];
     self.address1.text = [biz1 objectForKey: @"address1"];
     self.url1.text = [biz1 objectForKey: @"url1"];
-
+    
     // set business2 info
     self.name2.text = [biz2 objectForKey: @"name2"];
     self.category2.text = [biz2 objectForKey: @"category2"];
-//    self.rating2.text = [biz2 objectForKey: @"rating2"];
-//    self.reviews2.text = [biz2 objectForKey: @"reviews2"];
+    self.rating2.text = [[[biz2 objectForKey: @"rating2"] stringValue] stringByAppendingString:@" stars"];
+    self.reviews2.text = [[[biz2 objectForKey: @"reviews2"] stringValue] stringByAppendingString:@" reviews"];
     self.address2.text = [biz2 objectForKey: @"address2"];
     self.url2.text = [biz2 objectForKey: @"url2"];
-
+    
     // set business1 info
     self.name3.text = [biz3 objectForKey: @"name3"];
     self.category3.text = [biz3 objectForKey: @"category3"];
-//    self.rating3.text = [biz3 objectForKey: @"rating3"];
-//    self.reviews3.text = [biz3 objectForKey: @"reviews3"];
+    self.rating3.text = [[[biz3 objectForKey: @"rating3"] stringValue] stringByAppendingString:@" stars"];
+    self.reviews3.text = [[[biz3 objectForKey: @"reviews3"] stringValue] stringByAppendingString:@" reviews"];
     self.address3.text = [biz3 objectForKey: @"address3"];
     self.url3.text = [biz3 objectForKey: @"url3"];
-
+    
     // set business4 info
     self.name4.text = [biz4 objectForKey: @"name4"];
     self.category4.text = [biz4 objectForKey: @"category4"];
-//    self.rating4.text = [biz4 objectForKey: @"rating4"];
-//    self.reviews4.text = [biz4 objectForKey: @"reviews4"];
+    self.rating4.text = [[[biz4 objectForKey: @"rating4"] stringValue] stringByAppendingString:@" stars"];
+    self.reviews4.text = [[[biz4 objectForKey: @"reviews4"] stringValue] stringByAppendingString:@" reviews"];
     self.address4.text = [biz4 objectForKey: @"address4"];
     self.url4.text = [biz4 objectForKey: @"url4"];
-
+    
     // set business5 info
     self.name5.text = [biz5 objectForKey: @"name5"];
     self.category5.text = [biz5 objectForKey: @"category5"];
-//    self.rating5.text = [biz5 objectForKey: @"rating5"];
-//    self.reviews5.text = [biz5 objectForKey: @"reviews5"];
+    self.rating5.text = [[[biz5 objectForKey: @"rating5"] stringValue] stringByAppendingString:@" stars"];
+    self.reviews5.text = [[[biz5 objectForKey: @"reviews5"] stringValue] stringByAppendingString:@" reviews"];
     self.address5.text = [biz5 objectForKey: @"address5"];
     self.url5.text = [biz5 objectForKey: @"url5"];
 }
