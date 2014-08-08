@@ -6,5 +6,7 @@
 #import <Parse/Parse.h>
 #import "YPAPISample.h"
 #import "ActivitySuggestorController.h"
+#import <AVFoundation/AVFoundation.h>
+
 
 

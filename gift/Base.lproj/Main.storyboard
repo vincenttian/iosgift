@@ -539,10 +539,10 @@
             </objects>
             <point key="canvasLocation" x="496" y="-296"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="AP4-d6-T1S">
             <objects>
-                <viewController id="Zr7-D9-G6X" sceneMemberID="viewController">
+                <viewController id="Zr7-D9-G6X" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mhf-TK-Ndu"/>
                         <viewControllerLayoutGuide type="bottom" id="afU-vd-ZHW"/>

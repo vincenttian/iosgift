@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ActivitySuggestorController : UIViewController
+@interface ActivitySuggestorController : UIViewController {
+}
 
 @end

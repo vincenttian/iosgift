@@ -162,7 +162,8 @@
     // set business1 info
     self.name1.text = [biz1 objectForKey: @"name1"];
     self.category1.text = [biz1 objectForKey: @"category1"];
-    NSLog(@"%@", [biz1 objectForKey: @"rating1"]);
+//    NSLog(@"%@", [biz1 objectForKey: @"rating1"]);
+//    NSLog(@"%@", [biz1 objectForKey: @"reviews1"]);
 //    self.rating1.text = [biz1 objectForKey: @"rating1"];
 //    self.reviews1.text = [biz1 objectForKey: @"reviews1"];
     self.address1.text = [biz1 objectForKey: @"address1"];
