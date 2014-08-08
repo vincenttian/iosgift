@@ -10,7 +10,7 @@
 static NSString * const kAPIHost           = @"api.yelp.com";
 static NSString * const kSearchPath        = @"/v2/search/";
 static NSString * const kBusinessPath      = @"/v2/business/";
-static NSString * const kSearchLimit       = @"3";
+static NSString * const kSearchLimit       = @"5";
 
 @implementation YPAPISample
 
@@ -32,6 +32,9 @@ static NSString * const kSearchLimit       = @"3";
       NSDictionary *searchResponseJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
       NSArray *businessArray = searchResponseJSON[@"businesses"];
 
+        completionHandler(nil, businessArray);
+        return;
+        
       if ([businessArray count] > 0) {
         NSDictionary *firstBusiness = [businessArray objectAtIndex:0];
         NSString *firstBusinessID = firstBusiness[@"id"];

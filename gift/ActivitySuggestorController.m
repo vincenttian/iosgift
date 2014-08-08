@@ -30,8 +30,8 @@
     NSString *loncutstring = [longitude substringFromIndex:1];
     double latdouble = [latcutstring doubleValue];
     double londouble = [loncutstring doubleValue];
-    NSLog(@"dLatitude : %f", latdouble);
-    NSLog(@"dLongitude : %f",londouble);
+//    NSLog(@"dLatitude : %f", latdouble);
+//    NSLog(@"dLongitude : %f",londouble);
     
     // get city and country from lat long
     CLGeocoder *ceo = [[CLGeocoder alloc]init];
@@ -39,16 +39,14 @@
     [ceo reverseGeocodeLocation: loc completionHandler:
      ^(NSArray *placemarks, NSError *error) {
          CLPlacemark *placemark = [placemarks objectAtIndex:0];
-         NSLog(@"city: %@",placemark.locality); // Extract the city name
-         NSLog(@"country %@",placemark.country);  // Give Country Name
+//         NSLog(@"city: %@",placemark.locality); // Extract the city name
+//         NSLog(@"country %@",placemark.country);  // Give Country Name
 
          // recommend restaurants from yelp API
          YPAPISample *APISample = [[YPAPISample alloc] init];
-         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:placemark.locality completionHandler:^(NSDictionary *topBusinessJSON, NSError *error) {
-             if (error) {
-                 NSLog(@"An error happened during the request: %@", error);
-             } else if (topBusinessJSON) {
-                 NSLog(@"Top business info: \n %@", topBusinessJSON);
+         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"San Francisco" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
+             if (results) {
+                 NSLog(@"%@", results);
              } else {
                  NSLog(@"No business was found");
              }
