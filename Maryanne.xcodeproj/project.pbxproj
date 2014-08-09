@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870CE30419960B4200A15454 /* moon60.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 870CE30119960B4200A15454 /* moon60.jpeg */; };
+		870CE30519960B4200A15454 /* moon40.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 870CE30219960B4200A15454 /* moon40.jpeg */; };
+		870CE30619960B4200A15454 /* moon29.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 870CE30319960B4200A15454 /* moon29.jpeg */; };
 		87246B3719918C1A004697F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246B3619918C1A004697F9 /* AppDelegate.swift */; };
 		87246B3919918C1A004697F9 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246B3819918C1A004697F9 /* PictureViewController.swift */; };
 		87246B3E19918C1A004697F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87246B3C19918C1A004697F9 /* Main.storyboard */; };
@@ -93,6 +96,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		870CE30119960B4200A15454 /* moon60.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moon60.jpeg; sourceTree = "<group>"; };
+		870CE30219960B4200A15454 /* moon40.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moon40.jpeg; sourceTree = "<group>"; };
+		870CE30319960B4200A15454 /* moon29.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moon29.jpeg; sourceTree = "<group>"; };
 		87246B3119918C1A004697F9 /* Maryanne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maryanne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87246B3519918C1A004697F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87246B3619918C1A004697F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -304,6 +310,9 @@
 		87246B571991913E004697F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				870CE30119960B4200A15454 /* moon60.jpeg */,
+				870CE30219960B4200A15454 /* moon40.jpeg */,
+				870CE30319960B4200A15454 /* moon29.jpeg */,
 				874C8C631995D502003B28A9 /* launch2x.png */,
 				874C8C671995D58C003B28A9 /* launchr4.png */,
 				874C8C6B1995D8AA003B28A9 /* us.png */,
@@ -501,6 +510,7 @@
 			files = (
 				874C8C6C1995D8AA003B28A9 /* us.png in Resources */,
 				87F8D5E21993376200375FF0 /* 10.jpg in Resources */,
+				870CE30519960B4200A15454 /* moon40.jpeg in Resources */,
 				87F8D5E11993376200375FF0 /* 15.jpg in Resources */,
 				87F8D5ED1993377500375FF0 /* 2.jpg in Resources */,
 				874C8C4D19958574003B28A9 /* bettertogether.mp3 in Resources */,
@@ -509,6 +519,7 @@
 				87246B961992DD81004697F9 /* camera.png in Resources */,
 				87F8D5E71993376C00375FF0 /* 17.jpg in Resources */,
 				87F8D5E81993376C00375FF0 /* 20.jpg in Resources */,
+				870CE30619960B4200A15454 /* moon29.jpeg in Resources */,
 				87F8D5DD1993376200375FF0 /* 16.jpg in Resources */,
 				874C8C681995D58C003B28A9 /* launchr4.png in Resources */,
 				87246B9E1992DE6F004697F9 /* photos.png in Resources */,
@@ -522,6 +533,7 @@
 				87F8D5DF1993376200375FF0 /* 13.jpg in Resources */,
 				87F8D5EA1993376C00375FF0 /* 18.jpg in Resources */,
 				87F8D5D21993375500375FF0 /* 8.jpg in Resources */,
+				870CE30419960B4200A15454 /* moon60.jpeg in Resources */,
 				87F8D5D11993375500375FF0 /* 7.jpg in Resources */,
 				87246B4019918C1A004697F9 /* Images.xcassets in Resources */,
 				87F8D5E01993376200375FF0 /* 14.jpg in Resources */,
@@ -693,6 +705,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -701,6 +714,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Maryanne;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "gift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -715,6 +729,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -723,6 +738,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Maryanne;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "gift-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

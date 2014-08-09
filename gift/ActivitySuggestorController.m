@@ -57,14 +57,14 @@
     // Do any additional setup after loading the view.
     
     // get lat long
-    CLLocationCoordinate2D coordinate = [self getLocation];
-    NSString *latitude = [NSString stringWithFormat:@"%f", coordinate.latitude];
-    NSString *longitude = [NSString stringWithFormat:@"%f", coordinate.longitude];
-    // convert lat long from string to double
-    double latdouble = [latitude doubleValue];
-    double londouble = [longitude doubleValue];
-//    NSLog(@"double lat: %f", latdouble);
-//    NSLog(@"double long: %f",londouble);
+    lm = [[CLLocationManager alloc] init];
+    lm.delegate = self;
+    lm.desiredAccuracy = kCLLocationAccuracyBest;
+    lm.distanceFilter = kCLDistanceFilterNone;
+    [lm startUpdatingLocation];
+    CLLocation *location = [lm location];
+    double latdouble = location.coordinate.longitude;
+    double londouble = location.coordinate.latitude;
     
     // get city and country from lat long
     CLGeocoder *ceo = [[CLGeocoder alloc]init];
@@ -79,7 +79,14 @@
          YPAPISample *APISample = [[YPAPISample alloc] init];
          
 //         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"Fremont" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
-         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:placemark.locality completionHandler:^(NSDictionary *notNeeded, NSError *results) {
+         NSString *location;
+         if (placemark.locality == nil){
+                // initiate with sf if nil
+             location = @"San Francisco";
+         } else {
+             location = placemark.locality;
+         }
+         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:location completionHandler:^(NSDictionary *notNeeded, NSError *results) {
              if (results) {
                  // business1
                  NSString *name1 = [[results objectAtIndex:0] objectForKey:@"name"];

@@ -36,10 +36,10 @@ static NSString * const kSearchLimit       = @"5";
           completionHandler(nil, businessArray);
           return;
 
-        NSDictionary *firstBusiness = [businessArray objectAtIndex:0];
-        NSString *firstBusinessID = firstBusiness[@"id"];
-        NSLog(@"%lu businesses found, querying business info for the top result: %@", (unsigned long)[businessArray count], firstBusinessID);
-          [self queryBusinessInfoForBusinessId:firstBusinessID completionHandler:completionHandler];
+//        NSDictionary *firstBusiness = [businessArray objectAtIndex:0];
+//        NSString *firstBusinessID = firstBusiness[@"id"];
+//        NSLog(@"%lu businesses found, querying business info for the top result: %@", (unsigned long)[businessArray count], firstBusinessID);
+//          [self queryBusinessInfoForBusinessId:firstBusinessID completionHandler:completionHandler];
       } else {
         completionHandler(nil, error); // No business was found
       }
