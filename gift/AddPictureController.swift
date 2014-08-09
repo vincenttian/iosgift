@@ -35,16 +35,19 @@ class AddPictureController: UIViewController, UIImagePickerControllerDelegate, U
         
         var image = info[UIImagePickerControllerOriginalImage] as UIImage
         var imageData = UIImagePNGRepresentation(image)
+        var imageSize = imageData.length
         var file = PFFile(data: imageData)
         gameScore.setObject(file, forKey: "Picture")
         picker.dismissViewControllerAnimated(true, completion: nil)
-        gameScore.saveInBackgroundWithBlock {
-            (success: Bool!, error: NSError!) -> Void in
-            if success {
-//                self.reload = true
-                NSLog("Object created with id: \(gameScore.objectId)")
-            } else {
-                NSLog("%@", error)
+        if imageSize < 10000000 {
+            gameScore.saveInBackgroundWithBlock {
+                (success: Bool!, error: NSError!) -> Void in
+                if success {
+    //                self.reload = true
+                    NSLog("Object created with id: \(gameScore.objectId)")
+                } else {
+                    NSLog("%@", error)
+                }
             }
         }
     }
