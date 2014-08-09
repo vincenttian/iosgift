@@ -25,7 +25,6 @@ class WordViewController: UIViewController {
         let beginToday = today.dateByAddingTimeInterval(-86400)
         var query = PFQuery(className:"DailyWords")
         query.whereKey("createdAt", greaterThan:beginToday)
-        
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if !error { // success

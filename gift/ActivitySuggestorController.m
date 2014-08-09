@@ -80,7 +80,7 @@
          // recommend restaurants from yelp API
          YPAPISample *APISample = [[YPAPISample alloc] init];
          
-         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"San Francisco" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
+         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"Fremont" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
 //         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:placemark.locality completionHandler:^(NSDictionary *notNeeded, NSError *results) {
              if (results) {
                  // business1
