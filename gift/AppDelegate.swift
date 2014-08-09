@@ -16,13 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
-
+        // for music
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error:nil)
         Parse.setApplicationId("SSmJTIUPMJZOjlMVxGqOgi69qESLBQLJqKz7YoFQ", clientKey: "E0S1TfbAY01rKLSQmEbq2jsH4BMLyIovYytVcf6X")
-
         // for launch image to last longer
         sleep(2)
-        
-
         return true
     }
 

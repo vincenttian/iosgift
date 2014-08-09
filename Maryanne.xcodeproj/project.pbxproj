@@ -33,7 +33,6 @@
 		87246BA21992DF31004697F9 /* california.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246BA11992DF31004697F9 /* california.png */; };
 		87246BA41992E55A004697F9 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246BA31992E55A004697F9 /* WordViewController.swift */; };
 		874C8C4D19958574003B28A9 /* bettertogether.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C4C19958574003B28A9 /* bettertogether.mp3 */; };
-		874C8C4F19958585003B28A9 /* khalil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C4E19958585003B28A9 /* khalil.mp3 */; };
 		874C8C521995879D003B28A9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C8C511995879D003B28A9 /* MainViewController.m */; };
 		874C8C5419959E5D003B28A9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C5319959E5D003B28A9 /* 1.jpg */; };
 		874C8C651995D502003B28A9 /* launch2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C631995D502003B28A9 /* launch2x.png */; };
@@ -94,13 +93,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		87246B3119918C1A004697F9 /* gift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87246B3119918C1A004697F9 /* Maryanne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maryanne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87246B3519918C1A004697F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87246B3619918C1A004697F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87246B3819918C1A004697F9 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		87246B3D19918C1A004697F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87246B3F19918C1A004697F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		87246B4519918C1A004697F9 /* giftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87246B4519918C1A004697F9 /* MaryanneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaryanneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87246B4A19918C1A004697F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87246B4B19918C1A004697F9 /* giftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giftTests.swift; sourceTree = "<group>"; };
 		87246B5A19919283004697F9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -125,13 +124,13 @@
 		87246BA11992DF31004697F9 /* california.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = california.png; sourceTree = "<group>"; };
 		87246BA31992E55A004697F9 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 		874C8C4C19958574003B28A9 /* bettertogether.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bettertogether.mp3; sourceTree = "<group>"; };
-		874C8C4E19958585003B28A9 /* khalil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = khalil.mp3; sourceTree = "<group>"; };
 		874C8C501995879D003B28A9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		874C8C511995879D003B28A9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		874C8C5319959E5D003B28A9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		874C8C631995D502003B28A9 /* launch2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch2x.png; sourceTree = "<group>"; };
 		874C8C671995D58C003B28A9 /* launchr4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchr4.png; sourceTree = "<group>"; };
 		874C8C6B1995D8AA003B28A9 /* us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = us.png; sourceTree = "<group>"; };
+		876FB0011995EC7200D9FEB8 /* iOS_Team_Provisioning_Profile_ (1).mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS_Team_Provisioning_Profile_ (1).mobileprovision"; sourceTree = "<group>"; };
 		87BDEA9019940714006412DC /* NSURLRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+OAuth.h"; sourceTree = "<group>"; };
 		87BDEA9119940714006412DC /* NSURLRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+OAuth.m"; sourceTree = "<group>"; };
 		87BDEA9219940714006412DC /* YPAPISample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAPISample.h; sourceTree = "<group>"; };
@@ -244,8 +243,8 @@
 		87246B3219918C1A004697F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87246B3119918C1A004697F9 /* gift.app */,
-				87246B4519918C1A004697F9 /* giftTests.xctest */,
+				87246B3119918C1A004697F9 /* Maryanne.app */,
+				87246B4519918C1A004697F9 /* MaryanneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +257,7 @@
 				87BDEA9119940714006412DC /* NSURLRequest+OAuth.m */,
 				87BDEA9219940714006412DC /* YPAPISample.h */,
 				87BDEA9319940714006412DC /* YPAPISample.m */,
+				876FB0011995EC7200D9FEB8 /* iOS_Team_Provisioning_Profile_ (1).mobileprovision */,
 				87BDEA961994071C006412DC /* OAuthConsumer */,
 				87246B3419918C1A004697F9 /* Supporting Files */,
 				87BDEAD0199427F7006412DC /* ActivitySuggestorController.h */,
@@ -270,7 +270,6 @@
 				87246B3819918C1A004697F9 /* PictureViewController.swift */,
 				87246BA31992E55A004697F9 /* WordViewController.swift */,
 				874C8C4C19958574003B28A9 /* bettertogether.mp3 */,
-				874C8C4E19958585003B28A9 /* khalil.mp3 */,
 				87246B571991913E004697F9 /* Resources */,
 				87246B3F19918C1A004697F9 /* Images.xcassets */,
 			);
@@ -422,9 +421,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87246B3019918C1A004697F9 /* gift */ = {
+		87246B3019918C1A004697F9 /* Maryanne */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87246B4F19918C1A004697F9 /* Build configuration list for PBXNativeTarget "gift" */;
+			buildConfigurationList = 87246B4F19918C1A004697F9 /* Build configuration list for PBXNativeTarget "Maryanne" */;
 			buildPhases = (
 				87246B2D19918C1A004697F9 /* Sources */,
 				87246B2E19918C1A004697F9 /* Frameworks */,
@@ -434,14 +433,14 @@
 			);
 			dependencies = (
 			);
-			name = gift;
+			name = Maryanne;
 			productName = gift;
-			productReference = 87246B3119918C1A004697F9 /* gift.app */;
+			productReference = 87246B3119918C1A004697F9 /* Maryanne.app */;
 			productType = "com.apple.product-type.application";
 		};
-		87246B4419918C1A004697F9 /* giftTests */ = {
+		87246B4419918C1A004697F9 /* MaryanneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87246B5219918C1A004697F9 /* Build configuration list for PBXNativeTarget "giftTests" */;
+			buildConfigurationList = 87246B5219918C1A004697F9 /* Build configuration list for PBXNativeTarget "MaryanneTests" */;
 			buildPhases = (
 				87246B4119918C1A004697F9 /* Sources */,
 				87246B4219918C1A004697F9 /* Frameworks */,
@@ -452,9 +451,9 @@
 			dependencies = (
 				87246B4719918C1A004697F9 /* PBXTargetDependency */,
 			);
-			name = giftTests;
+			name = MaryanneTests;
 			productName = giftTests;
-			productReference = 87246B4519918C1A004697F9 /* giftTests.xctest */;
+			productReference = 87246B4519918C1A004697F9 /* MaryanneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -468,6 +467,7 @@
 				TargetAttributes = {
 					87246B3019918C1A004697F9 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = XN5UH228VE;
 					};
 					87246B4419918C1A004697F9 = {
 						CreatedOnToolsVersion = 6.0;
@@ -475,7 +475,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87246B2C19918C1A004697F9 /* Build configuration list for PBXProject "gift" */;
+			buildConfigurationList = 87246B2C19918C1A004697F9 /* Build configuration list for PBXProject "Maryanne" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -488,8 +488,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87246B3019918C1A004697F9 /* gift */,
-				87246B4419918C1A004697F9 /* giftTests */,
+				87246B3019918C1A004697F9 /* Maryanne */,
+				87246B4419918C1A004697F9 /* MaryanneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -508,7 +508,6 @@
 				87246B9C1992DE42004697F9 /* letter.png in Resources */,
 				87246B961992DD81004697F9 /* camera.png in Resources */,
 				87F8D5E71993376C00375FF0 /* 17.jpg in Resources */,
-				874C8C4F19958585003B28A9 /* khalil.mp3 in Resources */,
 				87F8D5E81993376C00375FF0 /* 20.jpg in Resources */,
 				87F8D5DD1993376200375FF0 /* 16.jpg in Resources */,
 				874C8C681995D58C003B28A9 /* launchr4.png in Resources */,
@@ -590,7 +589,7 @@
 /* Begin PBXTargetDependency section */
 		87246B4719918C1A004697F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87246B3019918C1A004697F9 /* gift */;
+			target = 87246B3019918C1A004697F9 /* Maryanne */;
 			targetProxy = 87246B4619918C1A004697F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -693,13 +692,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = gift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Maryanne;
 				SWIFT_OBJC_BRIDGING_HEADER = "gift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -713,13 +714,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = gift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Maryanne;
 				SWIFT_OBJC_BRIDGING_HEADER = "gift-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -739,7 +742,7 @@
 				);
 				INFOPLIST_FILE = giftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MaryanneTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -754,7 +757,7 @@
 				);
 				INFOPLIST_FILE = giftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MaryanneTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -762,7 +765,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87246B2C19918C1A004697F9 /* Build configuration list for PBXProject "gift" */ = {
+		87246B2C19918C1A004697F9 /* Build configuration list for PBXProject "Maryanne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87246B4D19918C1A004697F9 /* Debug */,
@@ -771,7 +774,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87246B4F19918C1A004697F9 /* Build configuration list for PBXNativeTarget "gift" */ = {
+		87246B4F19918C1A004697F9 /* Build configuration list for PBXNativeTarget "Maryanne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87246B5019918C1A004697F9 /* Debug */,
@@ -780,7 +783,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87246B5219918C1A004697F9 /* Build configuration list for PBXNativeTarget "giftTests" */ = {
+		87246B5219918C1A004697F9 /* Build configuration list for PBXNativeTarget "MaryanneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87246B5319918C1A004697F9 /* Debug */,

@@ -61,12 +61,10 @@
     NSString *latitude = [NSString stringWithFormat:@"%f", coordinate.latitude];
     NSString *longitude = [NSString stringWithFormat:@"%f", coordinate.longitude];
     // convert lat long from string to double
-    NSString *latcutstring = [latitude substringFromIndex:1];
-    NSString *loncutstring = [longitude substringFromIndex:1];
-    double latdouble = [latcutstring doubleValue];
-    double londouble = [loncutstring doubleValue];
-//    NSLog(@"dLatitude : %f", latdouble);
-//    NSLog(@"dLongitude : %f",londouble);
+    double latdouble = [latitude doubleValue];
+    double londouble = [longitude doubleValue];
+//    NSLog(@"double lat: %f", latdouble);
+//    NSLog(@"double long: %f",londouble);
     
     // get city and country from lat long
     CLGeocoder *ceo = [[CLGeocoder alloc]init];
@@ -80,8 +78,8 @@
          // recommend restaurants from yelp API
          YPAPISample *APISample = [[YPAPISample alloc] init];
          
-         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"Fremont" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
-//         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:placemark.locality completionHandler:^(NSDictionary *notNeeded, NSError *results) {
+//         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"Fremont" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
+         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:placemark.locality completionHandler:^(NSDictionary *notNeeded, NSError *results) {
              if (results) {
                  // business1
                  NSString *name1 = [[results objectAtIndex:0] objectForKey:@"name"];
