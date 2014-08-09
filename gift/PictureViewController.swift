@@ -26,6 +26,7 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     }
     
     override func viewDidAppear(animated: Bool) {
+        
         var query = PFQuery(className:"Pictures")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
@@ -43,6 +44,9 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
                         }
                         if index == counter {
                             self.tableView.reloadData()
+                            // move tableview down a little
+                            self._tableView.setContentOffset(CGPoint(x:0, y:-50), animated: true)
+
                         }
                     }
                 }

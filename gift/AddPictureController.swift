@@ -32,7 +32,9 @@ class AddPictureController: UIViewController, UIImagePickerControllerDelegate, U
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]!) {
         var gameScore = PFObject(className: "Pictures")
-        var imageData = UIImagePNGRepresentation(info[UIImagePickerControllerOriginalImage] as UIImage)
+        
+        var image = info[UIImagePickerControllerOriginalImage] as UIImage
+        var imageData = UIImagePNGRepresentation(image)
         var file = PFFile(data: imageData)
         gameScore.setObject(file, forKey: "Picture")
         picker.dismissViewControllerAnimated(true, completion: nil)

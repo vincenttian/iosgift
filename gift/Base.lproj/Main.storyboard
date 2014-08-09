@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zr7-D9-G6X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zr7-D9-G6X">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
         <!--Add Picture-->
         <scene sceneID="jBr-Hg-Wy3">
             <objects>
-                <viewController id="Q9L-fE-Axl" customClass="AddPictureController" customModule="gift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Q9L-fE-Axl" customClass="AddPictureController" customModule="Maryanne" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bH6-gw-6Hu"/>
                         <viewControllerLayoutGuide type="bottom" id="1Ax-zi-q9L"/>
@@ -109,7 +110,7 @@
         <!--Pictures-->
         <scene sceneID="p5B-Zy-Z6o">
             <objects>
-                <tableViewController id="4eV-Ht-j34" customClass="PictureViewController" customModule="gift" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="4eV-Ht-j34" customClass="PictureViewController" customModule="Maryanne" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="176" sectionHeaderHeight="22" sectionFooterHeight="22" id="c1O-G1-6MN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +149,6 @@
         <!--Activity Suggestor-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="ActivitySuggestorController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -419,6 +419,7 @@
                         <outlet property="url5" destination="w7R-9c-Qby" id="chb-Th-jUH"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928" y="42"/>
         </scene>
@@ -473,7 +474,7 @@
         <!--Note-->
         <scene sceneID="j95-Yc-Fe2">
             <objects>
-                <viewController id="t5S-nK-7uh" customClass="WordViewController" customModule="gift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t5S-nK-7uh" customClass="WordViewController" customModule="Maryanne" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RMP-eu-qIT"/>
                         <viewControllerLayoutGuide type="bottom" id="lO3-Gr-4kg"/>
@@ -586,13 +587,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I miss you a lot, and this app is meant for us to be closer and for the distance to seem shorter." translatesAutoresizingMaskIntoConstraints="NO" id="wVx-GR-1bD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="I miss you a lot, and this app is meant for us to be closer and for the distance to seem shorter." translatesAutoresizingMaskIntoConstraints="NO" id="wVx-GR-1bD">
                                 <rect key="frame" x="40" y="162" width="240" height="71"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="- Vincent Tian" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EVc-6K-OYI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="- Vincent Tian" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EVc-6K-OYI">
                                 <rect key="frame" x="86" y="241" width="141" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

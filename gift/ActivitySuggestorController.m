@@ -52,10 +52,7 @@
 
 @implementation ActivitySuggestorController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+- (void)viewWillAppear:(BOOL)animated {
     // get lat long
     lm = [[CLLocationManager alloc] init];
     lm.delegate = self;
@@ -72,16 +69,13 @@
     [ceo reverseGeocodeLocation: loc completionHandler:
      ^(NSArray *placemarks, NSError *error) {
          CLPlacemark *placemark = [placemarks objectAtIndex:0];
-//         NSLog(@"city: %@",placemark.locality); // Extract the city name
-//         NSLog(@"country %@",placemark.country);  // Give Country Name
-
+         //         NSLog(@"city: %@",placemark.locality); // Extract the city name
+         //         NSLog(@"country %@",placemark.country);  // Give Country Name
          // recommend restaurants from yelp API
          YPAPISample *APISample = [[YPAPISample alloc] init];
-         
-//         [APISample queryTopBusinessInfoForTerm:@"restaurant" location:@"Fremont" completionHandler:^(NSDictionary *notNeeded, NSError *results) {
          NSString *location;
          if (placemark.locality == nil){
-                // initiate with sf if nil
+             // initiate with sf if nil
              location = @"San Francisco";
          } else {
              location = placemark.locality;
@@ -145,7 +139,11 @@
              }
          }];
      }];
-    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
