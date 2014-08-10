@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pp-bo-mSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="-1211"/>
+            <point key="canvasLocation" x="1408" y="-796"/>
         </scene>
         <!--Pictures-->
         <scene sceneID="p5B-Zy-Z6o">
@@ -144,7 +144,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whi-md-Eno" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="-598"/>
+            <point key="canvasLocation" x="1344" y="61"/>
         </scene>
         <!--Activity Suggestor-->
         <scene sceneID="wg7-f3-ORb">
@@ -421,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="42"/>
+            <point key="canvasLocation" x="396" y="790"/>
         </scene>
         <!--Map-->
         <scene sceneID="IrC-4A-wck">
@@ -469,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ8-oc-eF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="381"/>
+            <point key="canvasLocation" x="-265" y="61"/>
         </scene>
         <!--Note-->
         <scene sceneID="j95-Yc-Fe2">
@@ -522,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6x-PU-gLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="-296"/>
+            <point key="canvasLocation" x="729" y="790"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -549,7 +549,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="-296"/>
+            <point key="canvasLocation" x="544" y="-560"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="AP4-d6-T1S">
@@ -576,32 +576,39 @@
                                 <rect key="frame" x="17" y="300" width="287" height="213"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="I know how much you love your iPhone, so I built this app for you! " translatesAutoresizingMaskIntoConstraints="NO" id="uG8-Rm-t9F">
-                                <rect key="frame" x="40" y="109" width="240" height="47"/>
+                                <rect key="frame" x="40" y="74" width="240" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to your own app!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hm-Y0-eMd">
-                                <rect key="frame" x="53" y="75" width="206" height="21"/>
+                                <rect key="frame" x="53" y="51" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="I miss you a lot, and this app is meant for us to be closer and for the distance to seem shorter." translatesAutoresizingMaskIntoConstraints="NO" id="wVx-GR-1bD">
-                                <rect key="frame" x="40" y="162" width="240" height="71"/>
+                                <rect key="frame" x="40" y="120" width="240" height="65"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="- Vincent Tian" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EVc-6K-OYI">
-                                <rect key="frame" x="86" y="241" width="141" height="33"/>
+                                <rect key="frame" x="86" y="268" width="141" height="26"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Maryanne Liu," translatesAutoresizingMaskIntoConstraints="NO" id="PyL-fM-5Xd">
-                                <rect key="frame" x="49" y="31" width="118" height="38"/>
+                                <rect key="frame" x="49" y="18" width="118" height="24"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18Z-HC-py8">
+                                <rect key="frame" x="40" y="182" width="240" height="91"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I know life took us to different places and we dont' know where we'll end up, but what I do know is that I am happy when we are together.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -616,7 +623,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lc-E1-gJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115" y="-296"/>
+            <point key="canvasLocation" x="-265" y="-796"/>
         </scene>
     </scenes>
     <resources>
