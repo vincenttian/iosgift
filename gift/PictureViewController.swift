@@ -27,6 +27,8 @@ class PictureViewController: UITableViewController, UIImagePickerControllerDeleg
     
     override func viewDidAppear(animated: Bool) {
         
+        Flurry.logEvent("Went to picture list view page")
+        
         var query = PFQuery(className:"Pictures")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in

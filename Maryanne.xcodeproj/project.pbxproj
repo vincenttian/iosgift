@@ -32,6 +32,7 @@
 		87246BA01992DEC1004697F9 /* walking.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246B9F1992DEC1004697F9 /* walking.png */; };
 		87246BA21992DF31004697F9 /* california.png in Resources */ = {isa = PBXBuildFile; fileRef = 87246BA11992DF31004697F9 /* california.png */; };
 		87246BA41992E55A004697F9 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87246BA31992E55A004697F9 /* WordViewController.swift */; };
+		873770D0199A89F4008C2264 /* libFlurry_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 873770CF199A89F4008C2264 /* libFlurry_5.2.0.a */; };
 		874C8C4D19958574003B28A9 /* bettertogether.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C4C19958574003B28A9 /* bettertogether.mp3 */; };
 		874C8C521995879D003B28A9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C8C511995879D003B28A9 /* MainViewController.m */; };
 		874C8C5419959E5D003B28A9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 874C8C5319959E5D003B28A9 /* 1.jpg */; };
@@ -126,6 +127,8 @@
 		87246B9F1992DEC1004697F9 /* walking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walking.png; sourceTree = "<group>"; };
 		87246BA11992DF31004697F9 /* california.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = california.png; sourceTree = "<group>"; };
 		87246BA31992E55A004697F9 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		873770CE199A89F4008C2264 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		873770CF199A89F4008C2264 /* libFlurry_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.2.0.a; sourceTree = "<group>"; };
 		874C8C4C19958574003B28A9 /* bettertogether.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bettertogether.mp3; sourceTree = "<group>"; };
 		874C8C501995879D003B28A9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		874C8C511995879D003B28A9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -221,6 +224,7 @@
 				87246B6E199193A1004697F9 /* QuartzCore.framework in Frameworks */,
 				87246B6F199193A1004697F9 /* Security.framework in Frameworks */,
 				87246B70199193A1004697F9 /* StoreKit.framework in Frameworks */,
+				873770D0199A89F4008C2264 /* libFlurry_5.2.0.a in Frameworks */,
 				87246B71199193A1004697F9 /* SystemConfiguration.framework in Frameworks */,
 				87246B5B19919283004697F9 /* Parse.framework in Frameworks */,
 			);
@@ -239,6 +243,7 @@
 		87246B2819918C1A004697F9 = {
 			isa = PBXGroup;
 			children = (
+				873770CD199A89F4008C2264 /* Flurry */,
 				87246B3319918C1A004697F9 /* gift */,
 				87246B5D19919328004697F9 /* Frameworks */,
 				87246B4819918C1A004697F9 /* giftTests */,
@@ -366,6 +371,15 @@
 				87246B5A19919283004697F9 /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		873770CD199A89F4008C2264 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				873770CE199A89F4008C2264 /* Flurry.h */,
+				873770CF199A89F4008C2264 /* libFlurry_5.2.0.a */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 		87BDEA961994071C006412DC /* OAuthConsumer */ = {
@@ -713,6 +727,10 @@
 				INFOPLIST_FILE = gift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry",
+				);
 				PRODUCT_NAME = Maryanne;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "gift-Bridging-Header.h";
@@ -737,6 +755,10 @@
 				INFOPLIST_FILE = gift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry",
+				);
 				PRODUCT_NAME = Maryanne;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "gift-Bridging-Header.h";

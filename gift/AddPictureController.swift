@@ -24,6 +24,10 @@ class AddPictureController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+
+    override func viewDidAppear(animated: Bool) {
+        Flurry.logEvent("Went to add picture page")
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
