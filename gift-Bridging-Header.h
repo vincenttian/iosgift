@@ -7,6 +7,8 @@
 #import "YPAPISample.h"
 #import "ActivitySuggestorController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "Flurry.h"
+
 
 
 

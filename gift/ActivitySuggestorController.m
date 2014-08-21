@@ -53,6 +53,9 @@
 @implementation ActivitySuggestorController
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    [Flurry logEvent:@"Went to activity suggestor page"];
+    
     // get lat long
     lm = [[CLLocationManager alloc] init];
     lm.delegate = self;

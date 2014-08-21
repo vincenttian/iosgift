@@ -20,7 +20,10 @@ class WordViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-    // get word of day of today
+        
+        Flurry.logEvent("Went to word view page")
+
+        // get word of day of today
         let today = NSDate()
         let beginToday = today.dateByAddingTimeInterval(-86400)
         var query = PFQuery(className:"DailyWords")
